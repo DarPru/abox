@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Open+Sans:wght@700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="img/fav.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Active box</title>
+</head>
+<body>
+			<!-- sprite -->
+			<svg style="display: none;">
+				<symbol id="facebook"  viewBox="0 0 24 24">
+					<g>
+						<path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"></g>
+				</symbol>
+				<symbol id="twitter" viewBox="0 0 512 512">
+					<g>
+						<path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+							c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+							c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+							c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+							c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+							c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+							C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+							C480.224,136.96,497.728,118.496,512,97.248z"/>
+					</g>
+				</symbol>
+				<symbol id="linkedin" viewBox="0 0 512 512">
+					<g>
+						<path d="m475.074219 0h-438.148438c-20.394531 0-36.925781 16.53125-36.925781 36.925781v438.148438c0 20.394531 16.53125 36.925781 36.925781 36.925781h438.148438c20.394531 0 36.925781-16.53125 36.925781-36.925781v-438.148438c0-20.394531-16.53125-36.925781-36.925781-36.925781zm-293.464844 387h-62.347656v-187.574219h62.347656zm-31.171875-213.1875h-.40625c-20.921875 0-34.453125-14.402344-34.453125-32.402344 0-18.40625 13.945313-32.410156 35.273437-32.410156 21.328126 0 34.453126 14.003906 34.859376 32.410156 0 18-13.53125 32.402344-35.273438 32.402344zm255.984375 213.1875h-62.339844v-100.347656c0-25.21875-9.027343-42.417969-31.585937-42.417969-17.222656 0-27.480469 11.601563-31.988282 22.800781-1.648437 4.007813-2.050781 9.609375-2.050781 15.214844v104.75h-62.34375s.816407-169.976562 0-187.574219h62.34375v26.558594c8.285157-12.78125 23.109375-30.960937 56.1875-30.960937 41.019531 0 71.777344 26.808593 71.777344 84.421874zm0 0"/>
+					</g>
+				</symbol>
+				<symbol id="hurt" viewBox="0 0 512 512">
+					<g>
+						<path d="M471.96,163.95c18.13,93.42-39.57,218.17-210.47,287.41a14.3,14.3,0,0,1-11,0C80.14,383.77,21.89,258.47,40.02,163.95,52.11,100.21,96.62,59.54,154.33,59.54c32.42,0,67.04,13.19,101.66,39.02,34.07-24.73,69.24-37.92,101.12-37.92C414.81,60.64,459.32,101.31,471.96,163.95Z">
+					</g>
+				</symbol>
+			</svg>
+
+			<!-- header -->
+	<header class="header" id="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="logo">
+					<img src="img/logo.png" alt="">
+				</div>
+				<div class="nav" id="nav">
+					<a class="nav__link" data-scroll="#features" href="#">Наши преимущества</a>
+					<a class="nav__link" data-scroll="#works" href="#">Продукция</a>
+					<a class="nav__link" data-scroll="#team" href="#">Команда</a>
+					<a class="nav__link" data-scroll="#testimonials" href="#">Отзывы</a>
+					<a class="nav__link" data-scroll="#download" href="#">Контакты</a>
+				</div>
+				<div class="burger" id="navToggle">
+					<span class="burger_item"></span>
+				</div>
+			</div>
+			
+		</div>
+	</header>
+	
+
+		<!-- intro -->
+	<div class="intro" id="intro">
+		<div class="container">
+			<div class="intro__inner">
+				<h1 class="intro__title">Сайт сувенирной продукции Active Box</h1>
+				<p class="intro_subtitle">Active Box занимается производством, разработкой и поставкой различного рода сувенирной, полиграфической и промо-продукции для бизнеса.
+				Ассортимент включает в себя товары различного уровня: от эконом до VIP класса. Мы предлагаем продукцию ведущих отечественных и зарубежных поставщиков. Вы останетесь довольны покупкой на все 100%!.</p>
+				<button class="btn open-modal" data-modal="#modal1">Узнать больше</button>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- features -->
+	<div class="container">
+		<div class="features" id="features">
+			<div class="features__item">
+				<img src="img/features/1.png" alt="">
+				<h3 class="features__title">Под любого потребителя</h3>
+				<p class="features__text">Наша продукция выполняется строго на заказ с учетом всех пожеланий клиента. Вы сможете подобрать индивидуальную продукцию под ваши зарпосы.</p>
+			</div>
+			<div class="features__item">
+				<img src="img/features/2.png" alt="">
+				<h3 class="features__title">Оперативная связь</h3>
+				<p class="features__text">Наша поддержка работает 24/7. Мы с радостью ответим на все ваши вопросы и внесем все необходимые правки в ваш заказ.</p>
+			</div>
+			<div class="features__item">
+				<img src="img/features/3.png" alt="">
+				<h3 class="features__title">Современный дизайн</h3>
+				<p class="features__text">Над вашим проектом будут работать лучшие дизайнеры. При работе используются современные технологии и дизайнерские приемы, что гарантирует вам уникальный продукт.</p>
+			</div>
+			
+			
+			<div class="features__item">
+				<img src="img/features/4.png" alt="">
+				<h3 class="features__title">Передовые технологии производства</h3>
+				<p class="features__text">Вся продукция произодися на современном оборудовании, что гарантирует вам высочайше качество в кратчайшие сроки.</p>
+			</div>
+			<div class="features__item">
+				<img src="img/features/5.png" alt="">
+				<h3 class="features__title">Открыты к сотрудничеству</h3>
+				<p class="features__text">Мы всегда рады молодым, перспективным специалистам, свежим и оригинальным идеям.</p>
+			</div>
+			<div class="features__item">
+				<img src="img/features/6.png" alt="">
+				<h3 class="features__title">Элетронная копия дизайна</h3>
+				<p class="features__text">Не хотите рисковать? Мы всегда предоставим вам копию вашего дизайна и напечатаем продукцию в любое удобное для вас время.</p>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- works -->
+	<div class="works" id="works">
+		<div class="works__item">
+			<img class="works__img"	src="img/works/1.png" alt="">
+			<div class="works__content">
+				<h4 class="works__title">Брошюры</h4>
+				<p class="works__text">Брошюры рассчитываются менеджером индивидуально, т.к. цена брошюры очень сильно зависит от многих параметров. Для расчета заказа укажите,формат брошюры и количество полос печати</p>
+			</div>
+		</div>
+
+		<div class="works__item">
+			<img class="works__img"	src="img/works/2.png" alt="">
+			<div class="works__content">
+				<h4 class="works__title">Сувениры новогодние</h4>
+				<p class="works__text">В нашем магазине вы без труда подберете сувенирную продукцию для друзей, родственников, сотрудников, коллег, клиентов и партнеров к Новому году.</p>
+			</div>
+		</div>
+
+		<div class="works__item">
+			<img class="works__img"	src="img/works/3.png" alt="">
+			<div class="works__content">
+				<h4 class="works__title">Кружки</h4>
+				<p class="works__text">Active Box предлагает услуги изготовления сувенирной посуды с логотипом. Практичные и удобные кружки, термостаканы, чайные наборы и пары станут прекрасным бизнес-сувениром.</p>
+			</div>
+		</div>
+
+		<div class="works__item">
+			<img class="works__img"	src="img/works/4.png" alt="">
+			<div class="works__content">
+				<h4 class="works__title">Зонты</h4>
+				<p class="works__text">Зонты с логотипом являются прекрасным вариантом корпоративного подарка. Их можно использовать в качестве раздаточного материала во время проведения промо-акций. Также они могут стать наградой победителям в спортивных соревнованиях  среди сотрудников фирмы. Кроме того, аксессуары пригодятся для поздравления VIP-клиентов или деловых партнеров.</p>
+			</div>
+		</div>
+
+		<div class="works__item">
+			<img class="works__img"	src="img/works/5.png" alt="">
+			<div class="works__content">
+				<h4 class="works__title">Шоколад</h4>
+				<p class="works__text">Порадусте себя сладкими подарками и шампанским</p>
+			</div>
+		</div>
+
+		<div class="works__item">
+			<img class="works__img"	src="img/works/6.png" alt="">
+			<div class="works__content">
+				<h4 class="works__title">Значки</h4>
+				<p class="works__text">Оригинальный акцент и яркий способ заявить о себе.</p>
+			</div>
+		</div>
+
+		<div class="works__item">
+			<img class="works__img"	src="img/works/7.png" alt="">
+			<div class="works__content">
+				<h4 class="works__title">Магниты</h4>
+				<p class="works__text">Материал – гибкий магнитный винил толщиной 0.4 мм, бумага плотностью 200 г с печатью, глянцевая ламинация плотностью 32 мк. Возможно изготовление более толстых магнитов, с использованием винила 0.7 мм и картона плотностью 285 г +25% к указанной в таблицах стоимости.</p>
+			</div>
+		</div>
+
+		<div class="works__item">
+			<img class="works__img"	src="img/works/8.png" alt="">
+			<div class="works__content">
+				<h4 class="works__title">Наклейки</h4>
+				<p class="works__text">Изготовление наклеек – одна из услуг компании Active Box. Мы готовы к производству продукции практически любых форм, размеров и тиражей. На сегодняшний день существует широкое разнообразие полиграфической продукции рекламного характера, и наклейки являются одним из наиболее популярных и эффективных видов.</p>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- team -->
+	<div class="team" id="team">
+		<div class="container">
+			<div class="team__inner">
+
+				<div class="team__item">
+					<img class="team_img" src="img/team/2.png" alt="">
+					<h4 class="team_name">Тимофей Романов</h4>
+					<p class="team_job">Генеральный директор</p>
+					<p class="team_info">Наша команда всегда творчески и с удовольствием подходит к созданию каждого проекта.</p>
+					
+					<div class="social">
+						<a class="social_item" href="#">
+							<svg class="social_icon"><use xlink:href="#twitter"></use></svg>
+						</a>
+						<a class="social_item" href="#">
+							<svg class="social_icon"><use xlink:href="#facebook"></use></svg>
+						</a>
+						<a class="social_item" href="#">
+							<svg class="social_icon"><use xlink:href="#linkedin"></use></svg>
+						</a>
+						
+					</div>
+				</div>
+
+				<div class="team__item">
+					<img class="team_img" src="img/team/1.png" alt="">
+					<h4 class="team_name">Виктория Варламова</h4>
+					<p class="team_job">Дизайнер </p>
+					<p class="team_info">Приятно совмещать полезную работу и творчество.</p>
+						<div class="social">
+						<a class="social_item" href="#">
+							<svg class="social_icon"><use xlink:href="#twitter"></use></svg>
+						</a>
+						<a class="social_item" href="#">
+							<svg class="social_icon"><use xlink:href="#facebook"></use></svg>
+						</a>
+						<a class="social_item" href="#">
+							<svg class="social_icon"><use xlink:href="#linkedin"></use></svg>
+						</a>
+						
+					</div>
+				</div>
+
+				<div class="team__item">
+					<img class="team_img" src="img/team/3.png" alt="">
+					<h4 class="team_name">Анастания Смирнова</h4>
+					<p class="team_job">Дизайнер</p>
+					<p class="team_info">Что для меня дизайн? Все. Профессия, увлечение, образ мысли и стиль жизни. Мое кредо в дизайне? Дизайн - это то что делает вещи (в широком понимании) сомасштабными человеку (опять - в широком понимании).</p>
+						<div class="social">
+						<a class="social_item" href="#">
+							<svg class="social_icon"><use xlink:href="#twitter"></use></svg>
+						</a>
+						<a class="social_item" href="#">
+							<svg class="social_icon"><use xlink:href="#facebook"></use></svg>
+						</a>
+						<a class="social_item" href="#">
+							<svg class="social_icon"><use xlink:href="#linkedin"></use></svg>
+						</a>
+						
+					</div>
+				</div>
+
+				<div class="team__item">
+					<img class="team_img" src="img/team/4.png" alt="">
+					<h4 class="team_name">Мария Лотинова</h4>
+					<p class="team_job">Технолог</p>
+					<p class="team_info">Продавать нужно не характеристики, а преимущества. Это правило работает и для создания брендов. Из хорошего продукта всегда понятно, какую ценность предлагает компания.</p>
+					<div class="social">
+						<a class="social_item" href="#">
+							<svg class="social_icon"><use xlink:href="#twitter"></use></svg>
+						</a>
+						<a class="social_item" href="#">
+							<svg class="social_icon"><use xlink:href="#facebook"></use></svg>
+						</a>
+						<a class="social_item" href="#">
+							<svg class="social_icon"><use xlink:href="#linkedin"></use></svg>
+						</a>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- testimonials  -->
+	<div class="testimonials" id="testimonials">
+		<div class="container">
+
+			<div id="testim_slider">
+				<div>
+					<div class="testimonials_item">
+						<div class="testimonials_photo">
+							<img class="testimonials_img" src="img/review/1.png" alt="">
+						</div>
+						<div class="testimonials_content">
+							<div class="testimonials_text">
+								“Огромное вам спасибо, за проделанную работу! Очень все здорово, оперативно, профессионально и вкусно Будем радовать любимых клиентов И станем вашими партнерами на долгое время Ещё раз огромное спасибо всему коллективу...”
+							</div>
+							<div class="testimonials_author">Светлана Коробова, Аудит</div>
+						</div>
+					</div>
+				</div>
+			
+				<div>
+					<div class="testimonials_item">
+						<div class="testimonials_photo">
+							<img class="testimonials_img" src="img/review/2.jpg" alt="">
+						</div>
+						<div class="testimonials_content">
+							<div class="testimonials_text">“Большое спасибо компании за быструю и качественную работу.Рекомендую Вас всем знакомым!!...”
+							</div>
+							<div class="testimonials_author">Олег Данилов, IT услуги</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div> <!-- /container -->
+	</div> <!-- /testimonials -->
+
+	<!-- download -->
+	<div class="download" id="download">
+		<div class="container">
+
+				<h3 class="download_title">Готовы начать? </h3>
+				<div class="download_sub">Закажите бесплатный звонок прямо сейчас!</div>
+				<button data-modal="#modal1" class="btn btn--download open-modal">Заказать звонок</button>
+
+		</div> <!-- /container -->
+	</div> <!-- /download -->
+
+
+	<!-- footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer_inner">
+
+				<div class="footer_item">
+					<h4 class="footer_title">Адрес</h4>
+					<div class="footer_content">
+						<p>Москва, Тверская 1</p>
+						<p>Санкт-Петербург, Наб. Канала Грибоедова 2А</p>
+					</div>
+				</div> <!-- /item 1 -->
+
+				<div class="footer_item">
+					<h4 class="footer_title">Присоединяйтесь</h4>
+					<div class="social social--footer">
+						<a class="social_item social_item--footer" href="#">
+							<svg class="social_icon"><use xlink:href="#twitter"></use></svg>
+						</a>
+						<a class="social_item social_item--footer" href="#">
+							<svg class="social_icon"><use xlink:href="#facebook"></use></svg>
+						</a>
+						<a class="social_item social_item--footer" href="#">
+							<svg class="social_icon"><use xlink:href="#linkedin"></use></svg>
+						</a>
+						
+					</div>
+					
+				</div> <!-- /item 2 -->
+				
+				<div class="footer_item">
+					<h4 class="footer_title">Больше о нас</h4>
+					<div class="footer_content">
+						<p> Подарок с логотипом создает лояльное отношение и формирует маркетинговое лицо компании. Мы отдаем весь свой опыт и знания для роста Вашего бизнеса.</p>
+					</div>
+				</div> <!-- / item_3 -->
+
+			</div> <!-- /footer_inner -->
+		</div> <!-- /container -->
+		<div class="footer_copyright">
+			<div class="footer_copyright_text">
+				<p>Макет <svg class="hurt_icon"><use xlink:href="#hurt"></use></svg> <span>by Kamal Chaneman</span></p>
+				<p>Copyright © 2015 ActiveBox. All Rights Reserved</p>
+				<p>Сайт разработан <svg class="hurt_icon"><use xlink:href="#hurt"></use></svg> <span>by DarPru</span></p>
+			</div>
+		</div>
+	</footer> <!-- /footer -->
+
+		<!-- modal -->
+		<div class='modal' id='modal1'>
+	<div class='content'>
+		<div class="text_content">
+			<h1 class='title_modal'>Мы всегда на связи</h1>
+			<p class="text_modal">
+					Оставьте ваши данные и мы вам обязательно перезвоним	
+			</p>
+		   <!--form-->
+      <form id="main_form" action="#">
+              <div><input type="text" class="form_name" name="name" placeholder="Ваше Имя"></div>
+              <div> <input class="form_number" id="phone" type="tel" name="phone" placeholder="Номер Телефона"></div>
+     		<button class='btn close-modal' type="submit" data-modal="#modal1" href="#">Отправить</button>
+	</form>
+	</div>	
+</div>
+</div> <!-- /modal -->
+
+
+	<!-- java script -->
+	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
+	<script src="app.js"></script>
+	 <script src="js/jquery.maskedinput.js" type="text/javascript"></script>
+    <script>
+      jQuery(function($){
+         $("#phone").mask("+7 (999) 999-99-99");
+  
+	});
+    </script>
+</body>
+</html>
